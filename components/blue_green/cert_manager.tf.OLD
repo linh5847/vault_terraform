@@ -1,0 +1,6 @@
+module "cert-manager" {
+  depends_on = [ module.vault ]
+  source     = "../../modules/certman"
+
+  namespace = module.namespace[0].namespace[0]
+}
