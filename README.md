@@ -22,7 +22,7 @@ KUBE_HOST$(minikube ip)
 
 ### Terraform Execution
 ```
-cd vault_traefik/components/blue_green
+cd components/blue_green
 *terraform init -get=true -input=false -force-copy*
 *terraform plan -var-file environments/blue-dev.tfvars*   
 Pay attention to the namespace indexes. 
